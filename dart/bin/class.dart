@@ -9,7 +9,7 @@ class Basic {
   int id;
   Basic(this.id);
   dostuff() {
-    print('Hey my ID is $id');
+    print('Hi my ID is $id');
   }
 
   static helper() {}

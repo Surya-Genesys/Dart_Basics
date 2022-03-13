@@ -1,14 +1,14 @@
 void main() {
-  List<int> numbers = [2, 6, 4];
-  Box<String> box1 = Box('hot');
-  Box<double> box2 = Box(3.25);
-  Box<List<int>> box3 = Box([2, 6, 4]);
+  List<int> numbers = [1, 2, 3];
+  Box<String> box1 = Box('Hot');
+  Box<double> box2 = Box(3.67);
+  Box<List<int>> box3 = Box([4, 5, 9]);
 }
 
 class Box<T> {
   T value;
   Box(this.value);
-  TopenBox() {
+  T openBox() {
     return value;
   }
 }

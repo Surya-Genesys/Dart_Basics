@@ -1,21 +1,21 @@
 void main() {
-  var s = superhuman();
+  var s = Superavenger();
   s.benchpress();
   s.sprint();
 }
 
-class Human {}
+class Avenger {}
 
-class superhuman extends Human with strong, fast {}
+class Superavenger extends Avenger with Strong, Fast {}
 
-mixin strong {
+mixin Strong {
   bool doeslift = true;
-
   void benchpress() {
     print('doing benchpress...');
   }
 }
-mixin fast {
+
+mixin Fast {
   bool doesRun = true;
   void sprint() {
     print('running fast...');
